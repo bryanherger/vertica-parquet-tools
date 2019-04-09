@@ -20,7 +20,7 @@ Quick start: generate a sample CREATE EXTERNAL TABLE AS COPY statement with:
 `python create_external_table_parquet.py example.parquet`
 This script will attempt to convert directory structures into partition columns.  Open an issue here if you have any trouble.
 
-Python script:
+Python script to insert a DataFrame into a new table using SQLAlchemy:
 ```python
 import sqlalchemy as sa
 from sqlalchemy.types import VARCHAR
