@@ -16,6 +16,10 @@ Installed Python 3.6.5 on CentOS 7.3 for these tests.
 Command line to install dependencies:
 `pip install numpy pandas psycopg2-binary pyarrow sqlalchemy sqlalchemy-vertica-python`
 
+Quick start: generate a sample CREATE EXTERNAL TABLE AS COPY statement with:
+`python create_external_table_parquet.py example.parquet`
+This script will attempt to convert directory structures into partition columns.  Open an issue here if you have any trouble.
+
 Python script:
 ```python
 import sqlalchemy as sa
