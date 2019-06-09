@@ -8,6 +8,8 @@ import pyarrow as pa
 vtypes = {}
 vtypes['INT32'] = 'int'
 vtypes['INT64'] = 'int'
+# INT96 is expected to be deprecated, but included because Vertica exports timestamps as this type
+vtypes['INT96'] = 'timestamp'
 vtypes['BYTE_ARRAY'] = 'varchar'
 vtypes['DOUBLE'] = 'float'
 # get the file or directory
